@@ -1,0 +1,144 @@
+
+label {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+body {
+    background: url('https://portagame.ru/katalog/game/switch-game/nswitch-fifa19_1.jpg') no-repeat center fixed;
+    height: 100%;
+    }
+
+
+.nav a {
+    color: #ffffff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: hidden;
+}
+
+
+ .profilebox {
+    width: 300px;
+    height: 350px;
+    background: url('https://thumbs.dreamstime.com/b/футбол-предпосылки-21109607.jpg') ;
+    cursor: pointer;
+    float: left;
+    margin: 30px;
+ }
+ .profilebox1 {
+     
+    background-position: center center;
+    background-size: cover;
+    perspective: 450px;
+    position: relative;
+ }
+ img{
+     width: 100%;
+     padding: 10px;
+     height: 350px;
+ }
+ .profilebox .SocialIcons {
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 15px;
+    transform: rotateY(90deg);
+    transform-origin: left center 0;
+    transition: all 350ms ease;
+ }
+ .profilebox .SocialIcons a {
+    background: #ffffff none repeat scroll 0 0;
+    font-size: 20px;
+    height: 50px;
+    margin-bottom: 1px;
+    position: relative;
+    text-align: center;
+    width: 50px;
+ }
+ .profilebox .SocialIcons a i {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+ }
+ .profilebox .SocialIcons a:nth-child(1) {
+ }
+ .profilebox .SocialIcons a:nth-child(2) {
+ }
+ .profilebox .SocialIcons a:nth-child(3) {
+ }
+ .profilebox:hover .SocialIcons {
+    opacity: 1;
+    left: 15px;
+    transform: rotateY(0deg);
+ }
+ .profilebox .profileInfo {
+    background: #ffffff none repeat scroll 0 0;
+    bottom: 0;
+    height: 50px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 90%;
+    transform: rotatex(90deg);
+    transform-origin: bottom center 0;
+    transition: all 350ms ease;
+    opacity: 0;
+ }
+ .profilebox .profileInfo h3 {
+    font-size: 20px;
+    margin: 15px 0;
+    text-align: center;
+ }
+ .profilebox:hover .profileInfo {
+    opacity: 1;
+    bottom: 15px;
+    transform: rotatex(0deg);
+ }
+
+
+
+ .contact {
+    position:static;
+  text-align: center;
+  
+}
+
+    
+.contact a {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background: #ffffff;
+    margin: 10px;
+    border-radius: 30%;
+    text-align: center;
+    }
+    
+.contact a i {
+    color: #11cc00;
+    font-size: 40px;
+    margin-top: 30px;
+    }
+    
+.contact a:hover {
+    background: #05e93e;
+    transition: 1s;
+    }
+    
+.contact a:hover i {
+    color: #f1f1f1;
+    transition: 1s;
+    transform: scale(1.3);
+    }
+
+footer {
+    position: relative;
+    margin-top:40px;
+    left: 0; bottom: 0; 
+    width: 100%;
+    overflow: hidden;
+        background-color:rgba(0,0,0,.6);
+    }
