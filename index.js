@@ -3,16 +3,13 @@ var app = express();
 var path = require('path');
 var router = express.Router();
 var bodyParser = require('body-parser')
-var jsonParser = bodyParser.json()
-// Create application/x-www-form-urlencoded parser  
+var jsonParser = bodyParser.json() 
 var urlencodedParser = bodyParser.urlencoded({ extended: false })  
 
-//add the router
 app.use('/', router);
 
 router.get('/',function(req,res){
   res.sendFile(path.join(__dirname+'/index.html'));
-  //__dirname : It will resolve to your project folder.
 });
 
 router.get('/homepage',function(req,res){
@@ -32,10 +29,6 @@ router.get('/about/team_photo',function(req,res){
 router.get('/video',function(req,res){
 	res.sendFile(path.join(__dirname+'/video.html'))
 })
-
-// app.post('/list', urlencodedParser, function(req, res) {
-//   	res.send(req.body);
-// });
 
 app.post('/list', urlencodedParser, function (req, res) {
   res.send('hello world')
