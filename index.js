@@ -30,10 +30,6 @@ router.get('/video',function(req,res){
 	res.sendFile(path.join(__dirname+'/video.html'))
 })
 
-app.post('/list', urlencodedParser, function (req, res) {
-  res.send('hello world')
-});
-
 router.get('/list', (req, res) => {
   res.sendFile(__dirname + '/list.html');
 });
